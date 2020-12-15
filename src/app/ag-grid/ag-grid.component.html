@@ -1,0 +1,31 @@
+<div ag-grid="gridOptions" class="container ag-theme-material ">
+  <h2 class="m--font-bold m--margin-bottom-20">Ag-Grid Example</h2>
+
+
+  <div>
+    <button (click)="fillLarge()">Fill 100%</button>
+    <button (click)="fillMedium()">Fill 60%</button>
+    <button (click)="fillExact()">Exactly 400 x 400 pixels</button>
+  </div>
+
+  <div class="ag-theme-material">
+    <h3 class="m--font-bol">Quick search:</h3>
+    <input type="text" (keyup)="quickSearch()" [(ngModel)]="searchValue" placeholder="quick filter">
+  </div>
+
+  <div [ngStyle]="style">
+    <ag-grid-angular
+      class="ag-theme-balham"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+      [pagination]="true"
+      [rowSelection]="rowSelection"
+      (gridReady)="onGridReady($event)"
+      (firstDataRendered)="onFirstDataRendered($event)"
+    >
+    </ag-grid-angular>
+  </div>
+</div>
+
+
+
