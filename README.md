@@ -1,14 +1,11 @@
 Implement simple table that have some features needed in now days like:
+
 -Displaying specific columns
 -Searching on each cell of table
 
 Technologies used:
-- Angular 7
-- Typescript
+- Angular 7 (Typescript)
 - AgGrid -> fully-featured and highly customizable JavaScript data grid that have beeing used for enterprise projects.
-
-
-
 
 
 # AgGrid
