@@ -1,6 +1,7 @@
 Implement simple table that have some features needed in now days like:
 
 -Displaying specific columns
+
 -Searching on each cell of table
 
 Technologies used:
